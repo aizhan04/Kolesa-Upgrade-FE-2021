@@ -1,5 +1,5 @@
-import "../css/style.css";
+import '../css/style.css';
 
-document.querySelector("#app").innerHTML = `
+document.querySelector('#app').innerHTML = `
   <h1>Hello, Aizhan!</h1>
 `;
