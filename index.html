@@ -12,204 +12,365 @@
 </head>
 
 <body>
-    <div id="app">
-        <div class="main_wrapper">
-            <div class="single_wrapper">
-                <img class="close_btn" src="/src/assets/modal_card/close-big.svg">
-
-                <div class="left_part">
+    <div class="main_wrapper">
+        <div class="section_header_wrapper">
+            <div style="display:flex">
+                <img class="main_logo" src="/src/assets/kolesa_img.svg">
+                <form class="search_wrapper">
+                    <button class="search_btn" type="submit">
+                        <img src="/src/assets/search_icon.svg">
+                    </button>
+                    <input class="search_input" type="text" placeholder="Поиск" name="search">
+                </form>
+            </div>
+            <a href="/" style="text-decoration: none;">
+                <div class="user_info_wrapper">
                     <div>
-                        <img src="/src/assets/modal_card/main_img.jpg">
+                        <img class="user_photo" src="/src/assets/user_photo.svg">
                     </div>
-                    <div class="img_row">
-                        <img class="small_photo" src="/src/assets/modal_card/single_img.jpg">
-                        <img class="active" src="/src/assets/modal_card/single3_img.jpg">
+                    <div>
+                        <p class="user_title">Мортиджан</p>
+                        <p class="user_balance">300 баллов</p>
+                    </div>
 
-                        <img class="small_photo" src="/src/assets/modal_card/single2_img.jpg">
+                </div>
+            </a>
+        </div>
+        <div class="section_content_wrapper">
+            <div class="sidebar_wrapper">
+                <ul>
+                    <li>
+                        <a class="paragraph" href="/">Оргсхема</a>
+                    </li>
+                    <li>
+                        <a class="paragraph" href="/">Kolesa Team</a>
+
+                    </li>
+                    <li>
+                        <a class="active" href="/">Kolesa Shop</a>
+                    </li>
+                    <li>
+                        <a class="paragraph" href="/">Картина компании</a>
+                    </li>
+                    <li>
+                        <a class="paragraph" href="/">Новости</a>
+                    </li>
+                    <li>
+                        <a class="paragraph" href="/">Education</a>
+                    </li>
+                    <li>
+                        <a class="paragraph" href="/">Guidelines</a>
+                    </li>
+                    <li>
+                        <a class="paragraph" href="/">Библиотека</a>
+                    </li>
+                    <li>
+                        <a class="paragraph" href="/">FAQ</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="main_content">
+                <img class="banner_img" src="/src/assets/banner.jpg">
+                <div>
+                    <div class="hot_btn">
+                        <button class="plus_balance">
+                            <img src="/src/assets/plus.svg">
+                            <p class="plus_balance_text">Получить баллы</p>
+                        </button>
+                        <button class="question_balance">
+                            <img src="/src/assets/question.svg">
+                            <p class="plus_balance_text">Как получить баллы</p>
+                        </button>
+                        <button class="gift_balance">
+                            <img src="/src/assets/podarok.svg">
+                            <p class="plus_balance_text">Подарить баллы</p>
+                        </button>
                     </div>
                 </div>
-                <div сlass="right_part" style="width: 100%;">
-                    <p class="main_title">Футболка "Эволюционируй или сдохни"</p>
-                    <div class="balance_info">
-                        <div>
-                            <p class="balance_cost">100 баллов</p>
-                            <button class="main_btn" type="button">Заказать</button>
-                        </div>
-                        <div class="balance_current">
-                            <div class="balance_current_info">
-                                <p class="balance_current_text">Твой баланс:</p>
-                                <p>3 945 баллов</p>
-                            </div>
-                            <div>
-                                <img src="/src/assets/modal_card/basket.svg">
-                            </div>
+                <div class="color">
+                    <div class="color-item">
+                        <input id="blue" type="radio" name="name">
+                        <label for="blue">Все товары</label>
+                    </div>
+                    <div class="color-item">
+                        <input id="beige" type="radio" name="name">
+                        <label id="color-2" for="beige">Одежда</label>
+                    </div>
+                    <div class="color-item">
+                        <input id="grey" type="radio" name="name">
+                        <label id="color-3" for="grey">Аксессуары</label>
+                    </div>
+                </div>
+                <div class="single_class_wrapper">
+                    <div class="single_card">
+                        <img src="/src/assets/photo_tovara.jpg">
+                        <div class="single_card_info">
+                            <p class="balance_number">220 баллов</p>
+                            <p class="item_name">Футболка "Эволюционируй или умри</p>
+                            <p class="item_size">Размеры S/M/L</p>
+                            <button class="order_btn">Заказать</button>
                         </div>
                     </div>
-                    <p class="colors-title">Цвета:</p>
-                    <div class="color">
-                        <div class="color-item">
-                            <input id="blue" type="radio" name="name">
-                            <label for="blue">Синий</label>
+                    <div class="single_card">
+                        <img src="/src/assets/photo_tovara.jpg">
+                        <div class="single_card_info">
+                            <p class="balance_number">220 баллов</p>
+                            <p class="item_name">Футболка "Эволюционируй или умри</p>
+                            <p class="item_size">Размеры S/M/L</p>
+                            <button class="order_btn">Заказать</button>
                         </div>
-                        <div class="color-item">
-                            <input id="beige" type="radio" name="name">
-                            <label id="color-2" for="beige">Бежевый</label>
+                    </div>
+                    <div class="single_card">
+                        <img src="/src/assets/photo_tovara.jpg">
+                        <div class="single_card_info">
+                            <p class="balance_number">220 баллов</p>
+                            <p class="item_name">Футболка "Эволюционируй или умри</p>
+                            <p class="item_size">Размеры S/M/L</p>
+                            <button class="order_btn">Заказать</button>
                         </div>
-                        <div class="color-item">
-                            <input id="grey" type="radio" name="name">
-                            <label id="color-3" for="grey">Серый</label>
+                    </div>
+                    <div class="single_card">
+                        <img src="/src/assets/photo_tovara.jpg">
+                        <div class="single_card_info">
+                            <p class="balance_number">220 баллов</p>
+                            <p class="item_name">Футболка "Эволюционируй или умри</p>
+                            <p class="item_size">Размеры S/M/L</p>
+                            <button class="order_btn">Заказать</button>
                         </div>
+                    </div>
+                    <div class="single_card">
+                        <img src="/src/assets/photo_tovara.jpg">
+                        <div class="single_card_info">
+                            <p class="balance_number">220 баллов</p>
+                            <p class="item_name">Футболка "Эволюционируй или умри</p>
+                            <p class="item_size">Размеры S/M/L</p>
+                            <button class="order_btn">Заказать</button>
+                        </div>
+                    </div>
+                    <div class="single_card">
+                        <img src="/src/assets/photo_tovara.jpg">
+                        <div class="single_card_info">
+                            <p class="balance_number">220 баллов</p>
+                            <p class="item_name">Футболка "Эволюционируй или умри</p>
+                            <p class="item_size">Размеры S/M/L</p>
+                            <button class="order_btn">Заказать</button>
+                        </div>
+                    </div>
+                </div>
 
-                    </div>
-                    <p class="size-text">Размер:</p>
-                    <div class="size_wrapper">
-                        <div class="size-item">
-                            <input id="S" type="radio" name="size" value="S">
-                            <label for="S">S</label>
-                        </div>
-                        <div class="size-item">
-                            <input id="M" type="radio" name="size" value="M">
-                            <label for="M">M</label>
-                        </div>
-                        <div class="size-item">
-                            <input id="L" type="radio" name="size" value="L">
-                            <label for="L">L</label>
-                        </div>
-                    </div>
-                    <div class="detail_info">
-                        <p class="detail_info_title">Детали:</p>
-                        <p>Брендированная толстовка от Qazaq Republic. Материал: Хлопок 80%, Вискоза 20%</p>
-                    </div>
-
-                    <div>
-                        <p class="detail_info_subtitle">Как выбрать размер:</p>
-                        <p>Написать дяде Рику для уточнения.</p>
-                    </div>
+            </div>
+        </div>
+        <div class="footer_wrapper">
+            <div>
+                <p class="kolesa_text">© Kolesa Group</p>
+                <div>
+                    <a href="/">
+                        <img src="/src/assets/icons/instagram.svg">
+                    </a>
+                    <a href="/">
+                        <img src="/src/assets/icons/youtube.svg">
+                    </a>
+                    <a href="/">
+                        <img src="/src/assets/icons/vk.svg">
+                    </a>
+                </div>
+            </div>
+            <div class="support_info">
+                <div class="support_text">
+                    <p>Есть идеи что улучшить?</p>
+                    <p>Не знаешь, с кем решить проблему?</p>
+                </div>
+                <div>
+                    <button class="send_info">Написать</button>
                 </div>
             </div>
         </div>
     </div>
-    <script type="module" src="/src/js/main.js"></script>
 </body>
-
-<style>
-    #app {
-        background-color: rgba(0, 0, 0, 0.6);
-        position: fixed;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
+<style lang="scss" scoped>
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: Open Sans;
+        scroll-behavior: smooth;
     }
 
-    p {
-        font-family: 'Open Sans', sans-serif;
-        margin: 0;
+
+    .section_header_wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 34px 91px 26px 32px;
     }
 
     .main_wrapper {
-        min-height: 100%;
+        /* background: aquamarine; */
+    }
+
+    .main_logo {
+        margin-right: 66px;
+    }
+
+    .search_wrapper {
+        position: relative;
         display: flex;
         align-items: center;
+        padding: 8px 14px 8px;
+        justify-content: flex-start;
+        width: 308px;
+        height: 44px;
+        background: #F2F2F3;
+        border-radius: 8px;
+    }
+
+    .search_btn {
+        border: none;
+        background: transparent;
+        padding-right: 24px;
+    }
+
+    .search_input {
+        border: none;
+        background: transparent;
+    }
+
+    .search_input:focus {
+        outline: none;
+    }
+
+    .user_photo {
+        padding-right: 16px;
+    }
+
+    .user_info_wrapper {
+        display: flex;
+        align-content: center;
         justify-content: center;
     }
 
-    .single_wrapper {
-        position: relative;
-        display: flex;
+    .user_title {
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 24px;
+        color: #2A81DD;
+    }
+
+    .user_balance {
+        font-size: 13px;
+        line-height: 20px;
+        color: #1C1819;
+    }
+
+    .section_content_wrapper {
         width: 100%;
-        max-width: 1039px;
-        padding: 64px 56px 64px;
-        background-color: #fff;
-        border-radius: 16px;
-    }
-
-    .close_btn {
-        position: absolute;
-        top: 20px;
-        right: 25px;
-        cursor: pointer;
-    }
-
-    .left_part {
-        width: 330px;
+        padding: 0 90px 192px 32px;
+        /* background: coral; */
         display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        margin-right: 24px;
+        justify-content: space-between;
+        align-content: center;
     }
 
-    .small_photo {
-        cursor: pointer;
+    .sidebar_wrapper {
+        margin-right: 132px;
+    }
+
+    ul {
+        list-style: none;
+
+    }
+
+    li {
+        padding-bottom: 26px;
+
+    }
+
+    .paragraph {
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        color: #1C1819;
+        text-decoration: none;
     }
 
     .active {
-        border: 1px solid #2a81dd;
-        box-sizing: border-box;
-        border-radius: 8px;
-        cursor: pointer;
-    }
-
-    .main_title {
+        font-family: Open Sans;
         font-style: normal;
-        font-weight: normal;
-        font-size: 20px;
-        line-height: 32px;
-        color: #1c1819;
-        margin: 0;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        color: #1C1819;
+        text-decoration: none;
     }
 
-    .balance_info {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+    /* .main_content {
+        width: 100%;
+    } */
+
+    .banner_img {
+        /* width: 100%; */
         margin-bottom: 24px;
     }
 
-    .balance_cost {
-        margin: 8px 0;
+    .hot_btn {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 40px;
+
+    }
+
+    .plus_balance {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 330px;
+        height: 76px;
+        padding: 10px 24px;
+        border: none;
+        background-color: #EFF8EB;
+        border-radius: 16px;
+        cursor: pointer;
+    }
+
+    .plus_balance_text {
+        font-family: Open Sans;
         font-style: normal;
         font-weight: 600;
         font-size: 20px;
         line-height: 32px;
-        color: #1c1819;
+        padding-left: 16px;
+        color: #1C1819;
     }
 
-    .main_btn {
-        font-family: 'Open Sans', sans-serif;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 24px;
-        width: 134px;
-        height: 36px;
-        color: white;
-        border: none;
-        cursor: pointer;
-        background: #2a81dd;
-        box-shadow: 0 2px 4px rgba(28, 24, 25, 0.1);
-        border-radius: 8px;
-    }
-
-    .balance_current {
-        width: 100%;
-        max-width: 196px;
-        height: 68px;
+    .question_balance {
         display: flex;
         align-items: center;
-        justify-content: center;
-        background: #f0fafd;
+        justify-content: flex-start;
+        width: 330px;
+        height: 76px;
+        padding: 10px 24px;
+        border: none;
         border-radius: 16px;
+        cursor: pointer;
+        background-color: #FFFAE7;
     }
 
-    .balance_current_info {
-        margin-right: 24px;
-    }
+    .gift_balance {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 330px;
+        height: 76px;
+        padding: 10px 24px;
+        border: none;
+        border-radius: 16px;
+        cursor: pointer;
+        background-color: #E9F2FB;
 
-    .balance_current_text {
-        font-size: 14px;
-        line-height: 24px;
-        color: #888b94;
     }
 
     .colors-title,
@@ -247,26 +408,10 @@
         color: #2a81dd;
         border: 1px solid rgba(28, 24, 25, 0.1);
         border-radius: 8px;
-        padding: 8px;
+        padding: 8px 20px;
+
     }
 
-    .color label::before {
-        display: block;
-        content: '';
-        width: 24px;
-        height: 24px;
-        background: #00458a;
-        border-radius: 4px;
-        margin-right: 8px;
-    }
-
-    #color-2::before {
-        background: #efe8d8;
-    }
-
-    #color-3::before {
-        background: #d4d4da;
-    }
 
     .color-item input:checked+label {
         background: #d6ecfb;
@@ -274,58 +419,130 @@
         border: none;
     }
 
-    .size_wrapper {
-        display: flex;
-        flex-wrap: wrap;
-        margin-bottom: 24px;
+    .single_class_wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
     }
 
-    .size-item {
-        margin-right: 8px;
-    }
-
-    .size-item input {
-        display: none;
-    }
-
-    .size-item label {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .single_card {
+        width: 330px;
+        /* min-height: 502px; */
+        /* background: aquamarine; */
         cursor: pointer;
+        transition: 0.22s;
+    }
+
+    .single_card_info {
+        padding: 0 24px 16px 16px;
+    }
+
+    .balance_number {
         font-family: Open Sans;
         font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 24px;
-        color: #2a81dd;
-        border: 1px solid rgba(28, 24, 25, 0.1);
-        border-radius: 8px;
-        padding: 8px 16px;
-    }
-
-    .size-item input:checked+label {
-        font-family: Open Sans;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 24px;
-        background: #d6ecfb;
-        color: #1c1819;
-        border: none;
-    }
-
-    .detail_info {
-        margin-bottom: 24px;
-    }
-
-    .detail_info_title,
-    .detail_info_subtitle {
         font-weight: 600;
+        font-size: 24px;
+        line-height: 36px;
+        padding-bottom: 4px;
+        color: #2A81DD;
+        transition: 0.22s;
+
+    }
+
+    .item_name {
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        color: #1C1819;
+        display: block;
+        /* Fallback for non-webkit */
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .item_size {
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
         font-size: 14px;
         line-height: 24px;
-        color: #1c1819;
-        padding-bottom: 4px;
+        padding-bottom: 16px;
+        color: #888B94;
+    }
+
+    .order_btn {
+        width: 100%;
+        font-size: 16px;
+        line-height: 24px;
+        background: #2A81DD;
+        height: 44px;
+        border: none;
+        color: white;
+        box-shadow: 0px 2px 4px rgba(28, 24, 25, 0.1);
+        border-radius: 8px;
+        cursor: pointer;
+        opacity: 0;
+        transition: 0.22s;
+    }
+
+    .single_card:hover .balance_number {
+        color: #FF3333;
+    }
+
+    .single_card:hover .order_btn {
+        opacity: 1;
+    }
+
+    .single_card:hover {
+        box-shadow: 0 2px 10px rgba(28, 24, 25, 0.1);
+        border-radius: 8px;
+    }
+
+    .footer_wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding: 27px 39px 23px 32px;
+        background: #1C1819;
+    }
+
+    .kolesa_text {
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        color: #FFFFFF;
+        padding-bottom: 11px;
+    }
+
+    .support_text {
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        color: #FFFFFF;
+    }
+
+    .support_info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .send_info {
+        width: 150px;
+        height: 36px;
+        background: #FFFFFF;
+        box-shadow: 0px 2px 4px rgba(28, 24, 25, 0.1);
+        border-radius: 8px;
+        margin-left: 30px;
+        color: #2A81DD;
+        cursor: pointer;
     }
 </style>
 
