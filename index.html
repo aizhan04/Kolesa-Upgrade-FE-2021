@@ -1,13 +1,332 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/src/assets/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="app">
+        <div class="main_wrapper">
+            <div class="single_wrapper">
+                <img class="close_btn" src="/src/assets/modal_card/close-big.svg">
+
+                <div class="left_part">
+                    <div>
+                        <img src="/src/assets/modal_card/main_img.jpg">
+                    </div>
+                    <div class="img_row">
+                        <img class="small_photo" src="/src/assets/modal_card/single_img.jpg">
+                        <img class="active" src="/src/assets/modal_card/single3_img.jpg">
+
+                        <img class="small_photo" src="/src/assets/modal_card/single2_img.jpg">
+                    </div>
+                </div>
+                <div сlass="right_part" style="width: 100%;">
+                    <p class="main_title">Футболка "Эволюционируй или сдохни"</p>
+                    <div class="balance_info">
+                        <div>
+                            <p class="balance_cost">100 баллов</p>
+                            <button class="main_btn" type="button">Заказать</button>
+                        </div>
+                        <div class="balance_current">
+                            <div class="balance_current_info">
+                                <p class="balance_current_text">Твой баланс:</p>
+                                <p>3 945 баллов</p>
+                            </div>
+                            <div>
+                                <img src="/src/assets/modal_card/basket.svg">
+                            </div>
+                        </div>
+                    </div>
+                    <p class="colors-title">Цвета:</p>
+                    <div class="color">
+                        <div class="color-item">
+                            <input id="blue" type="radio" name="name">
+                            <label for="blue">Синий</label>
+                        </div>
+                        <div class="color-item">
+                            <input id="beige" type="radio" name="name">
+                            <label id="color-2" for="beige">Бежевый</label>
+                        </div>
+                        <div class="color-item">
+                            <input id="grey" type="radio" name="name">
+                            <label id="color-3" for="grey">Серый</label>
+                        </div>
+
+                    </div>
+                    <p class="size-text">Размер:</p>
+                    <div class="size_wrapper">
+                        <div class="size-item">
+                            <input id="S" type="radio" name="size" value="S">
+                            <label for="S">S</label>
+                        </div>
+                        <div class="size-item">
+                            <input id="M" type="radio" name="size" value="M">
+                            <label for="M">M</label>
+                        </div>
+                        <div class="size-item">
+                            <input id="L" type="radio" name="size" value="L">
+                            <label for="L">L</label>
+                        </div>
+                    </div>
+                    <div class="detail_info">
+                        <p class="detail_info_title">Детали:</p>
+                        <p>Брендированная толстовка от Qazaq Republic. Материал: Хлопок 80%, Вискоза 20%</p>
+                    </div>
+
+                    <div>
+                        <p class="detail_info_subtitle">Как выбрать размер:</p>
+                        <p>Написать дяде Рику для уточнения.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script type="module" src="/src/js/main.js"></script>
-  </body>
+</body>
+
+<style>
+    #app {
+        background-color: rgba(0, 0, 0, 0.6);
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    p {
+        font-family: 'Open Sans', sans-serif;
+        margin: 0;
+    }
+
+    .main_wrapper {
+        min-height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .single_wrapper {
+        position: relative;
+        display: flex;
+        width: 100%;
+        max-width: 1039px;
+        padding: 64px 56px 64px;
+        background-color: #fff;
+        border-radius: 16px;
+    }
+
+    .close_btn {
+        position: absolute;
+        top: 20px;
+        right: 25px;
+        cursor: pointer;
+    }
+
+    .left_part {
+        width: 330px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-right: 24px;
+    }
+
+    .small_photo {
+        cursor: pointer;
+    }
+
+    .active {
+        border: 1px solid #2a81dd;
+        box-sizing: border-box;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    .main_title {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 32px;
+        color: #1c1819;
+        margin: 0;
+    }
+
+    .balance_info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 24px;
+    }
+
+    .balance_cost {
+        margin: 8px 0;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 32px;
+        color: #1c1819;
+    }
+
+    .main_btn {
+        font-family: 'Open Sans', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        width: 134px;
+        height: 36px;
+        color: white;
+        border: none;
+        cursor: pointer;
+        background: #2a81dd;
+        box-shadow: 0 2px 4px rgba(28, 24, 25, 0.1);
+        border-radius: 8px;
+    }
+
+    .balance_current {
+        width: 100%;
+        max-width: 196px;
+        height: 68px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #f0fafd;
+        border-radius: 16px;
+    }
+
+    .balance_current_info {
+        margin-right: 24px;
+    }
+
+    .balance_current_text {
+        font-size: 14px;
+        line-height: 24px;
+        color: #888b94;
+    }
+
+    .colors-title,
+    .size-text {
+        margin-bottom: 8px;
+        font-size: 14px;
+        line-height: 24px;
+        color: #1c1819;
+    }
+
+    .color {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 24px;
+    }
+
+    .color-item {
+        margin-right: 8px;
+    }
+
+    .color-item input {
+        display: none;
+    }
+
+    .color-item label {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        color: #2a81dd;
+        border: 1px solid rgba(28, 24, 25, 0.1);
+        border-radius: 8px;
+        padding: 8px;
+    }
+
+    .color label::before {
+        display: block;
+        content: '';
+        width: 24px;
+        height: 24px;
+        background: #00458a;
+        border-radius: 4px;
+        margin-right: 8px;
+    }
+
+    #color-2::before {
+        background: #efe8d8;
+    }
+
+    #color-3::before {
+        background: #d4d4da;
+    }
+
+    .color-item input:checked+label {
+        background: #d6ecfb;
+        color: #1c1819;
+        border: none;
+    }
+
+    .size_wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 24px;
+    }
+
+    .size-item {
+        margin-right: 8px;
+    }
+
+    .size-item input {
+        display: none;
+    }
+
+    .size-item label {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        color: #2a81dd;
+        border: 1px solid rgba(28, 24, 25, 0.1);
+        border-radius: 8px;
+        padding: 8px 16px;
+    }
+
+    .size-item input:checked+label {
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        background: #d6ecfb;
+        color: #1c1819;
+        border: none;
+    }
+
+    .detail_info {
+        margin-bottom: 24px;
+    }
+
+    .detail_info_title,
+    .detail_info_subtitle {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 24px;
+        color: #1c1819;
+        padding-bottom: 4px;
+    }
+</style>
+
 </html>
