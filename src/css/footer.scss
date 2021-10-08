@@ -1,0 +1,42 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 27px 39px 23px 32px;
+    background: #1c1819;
+
+    &__kolesa_text {
+        font-size: 16px;
+        line-height: 24px;
+        color: #fff;
+        padding-bottom: 11px;
+    }
+
+    &__info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__text {
+        font-size: 14px;
+        line-height: 24px;
+        color: #fff;
+    }
+
+    &__info_btn {
+        width: 150px;
+        height: 36px;
+        background: #fff;
+        box-shadow: 0 2px 4px rgba(28, 24, 25, 0.1);
+        border-radius: 8px;
+        margin-left: 30px;
+        color: #2a81dd;
+        cursor: pointer;
+        transition: all ease 1s;
+
+        &:hover {
+            background: grey;
+            color: white;
+        }
+    }
+}

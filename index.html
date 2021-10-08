@@ -9,28 +9,27 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/src/css/style.css">
 </head>
 
 <body>
     <div class="main_wrapper ">
         <div class="section_header_wrapper">
-            <div class="section_header_left">
-                <img class="main_logo" src="/src/assets/kolesa_img.svg" alt="Logo">
-                <form class="search_wrapper">
+            <div class="section_header_wrapper__left">
+                <img class="section_header_wrapper__main_logo" src="/src/assets/kolesa_img.svg" alt="Logo">
+                <form class="section_header_wrapper__search_block">
                     <input class="search_input" type="text" placeholder="Поиск" name="search">
                     <img class="search_icon" src="/src/assets/search_icon.svg" alt="search">
                 </form>
             </div>
-            <a href="/" class="user_info_main">
-                <div class="user_info_wrapper">
+            <a href="/" class="user_info">
+                <div class="user_info__wrapper">
                     <div>
-                        <img class="user_photo" src="/src/assets/user_photo.svg" alt="photo">
+                        <img class="user_info__photo" src="/src/assets/user_photo.svg" alt="photo">
                     </div>
-                    <nav class="menu">
+                    <nav class="user_info__menu">
                         <ul>
-                            <li><a href="#" class="user_title">Мортиджан</a></li>
-                            <li><a href="#" class="user_balance">300 баллов</a></li>
+                            <li><a href="#" class="user_info__title">Мортиджан</a></li>
+                            <li><a href="#" class="user_info__balance">300 баллов</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -40,143 +39,128 @@
             <div class="sidebar_wrapper">
                 <ul>
                     <li>
-                        <a class="paragraph" href="/">Оргсхема</a>
+                        <a class="sidebar_wrapper__paragraph" href="/">Оргсхема</a>
                     </li>
                     <li>
-                        <a class="paragraph" href="/">Kolesa Team</a>
+                        <a class="sidebar_wrapper__paragraph" href="/">Kolesa Team</a>
                     </li>
                     <li>
-                        <a class="paragraph" href="/">Kolesa Shop</a>
+                        <a class="sidebar_wrapper__paragraph" href="/">Kolesa Shop</a>
                     </li>
                     <li>
-                        <a class="paragraph" href="/">Картина компании</a>
+                        <a class="sidebar_wrapper__paragraph" href="/">Картина компании</a>
                     </li>
                     <li>
-                        <a class="paragraph" href="/">Новости</a>
+                        <a class="sidebar_wrapper__paragraph" href="/">Новости</a>
                     </li>
                     <li>
-                        <a class="paragraph" href="/">Education</a>
+                        <a class="sidebar_wrapper__paragraph" href="/">Education</a>
                     </li>
                     <li>
-                        <a class="paragraph" href="/">Guidelines</a>
+                        <a class="sidebar_wrapper__paragraph" href="/">Guidelines</a>
                     </li>
                     <li>
-                        <a class="paragraph" href="/">Библиотека</a>
+                        <a class="sidebar_wrapper__paragraph" href="/">Библиотека</a>
                     </li>
                     <li>
-                        <a class="paragraph" href="/">FAQ</a>
+                        <a class="sidebar_wrapper__paragraph" href="/">FAQ</a>
                     </li>
                 </ul>
             </div>
             <div class="main_content">
-                <img class="banner_img" src="/src/assets/banner.jpg" alt="sale">
                 <div>
-                    <div class="hot_btn">
-                        <button class="plus_balance">
+                <img class="main_content__banner" src="/src/assets/banner.jpg" alt="sale">
+                    <div class="main_content__hot_btn">
+                        <button class="main_content__plus color1">
                             <img src="/src/assets/plus.svg" alt="plus">
-                            <span class="plus_balance_text">Получить баллы</span>
+                            <span class="main_content__text">Получить баллы</span>
                         </button>
-                        <button class="question_balance">
+                        <button class="main_content__question color2">
                             <img src="/src/assets/question.svg" alt="question">
-                            <span class="plus_balance_text">Как получить баллы</span>
+                            <span class="main_content__text">Как получить баллы</span>
                         </button>
-                        <button class="gift_balance">
+                        <button class="main_content__gift color3">
                             <img src="/src/assets/podarok.svg" alt="gift">
-                            <span class="plus_balance_text">Подарить баллы</span>
+                            <span class="main_content__text">Подарить баллы</span>
                         </button>
                     </div>
                 </div>
                 <div class="color">
-                    <div class="color-item">
+                    <div class="color__item">
                         <input id="blue" type="radio" name="name">
                         <label for="blue">Все товары</label>
                     </div>
-                    <div class="color-item">
+                    <div class="color__item">
                         <input id="beige" type="radio" name="name">
                         <label id="color-2" for="beige">Одежда</label>
                     </div>
-                    <div class="color-item">
+                    <div class="color__item">
                         <input id="grey" type="radio" name="name">
                         <label id="color-3" for="grey">Аксессуары</label>
                     </div>
                 </div>
-                <div class="content_wrapper">
-                    <div class="item_single_card">
-                        <div class="item_single_card_content">
-                            <div class="single_card_image">
+                <div class="cards">
+                    <div class="cards__single">
+                        <div class="cards__item">
+                            <div class="">
                                 <img src="/src/assets/photo_tovara.jpg" alt="T-shirt">
-                                <span class="item_label">New</span>
+                                <span class="cards__label">New</span>
                             </div>
-                            <div class="item_info">
-                                <h3 class="item_count">220 баллов</h3>
-                                <h4 class="item_title">Футболка "Эволюционируй или сдохни</h4>
-                                <p class="item_size">Размеры S/M/L</p>
-                                <button type="button" class="item_btn">Заказать</button>
+                            <div class="cards__info">
+                                <h3 class="cards__count">220 баллов</h3>
+                                <h4 class="cards__title">Футболка "Эволюционируй или сдохни</h4>
+                                <p class="cards__size">Размеры S/M/L</p>
+                                <button type="button" class="cards__btn">Заказать</button>
                             </div>
                         </div>
                     </div>
-                    <div class="item_single_card">
-                        <div class="item_single_card_content">
-                            <div class="single_card_image">
-                                <img src="/src/assets/photo_tovara.jpg" alt="T-shirt">
-                                <span class="item_label">New</span>
-                            </div>
-                            <div class="item_info">
-                                <h3 class="item_count">220 баллов</h3>
-                                <h4 class="item_title">Футболка "Эволюционируй или сдохни</h4>
-                                <p class="item_size">Размеры S/M/L</p>
-                                <button type="button" class="item_btn">Заказать</button>
-                            </div>
+                <div class="cards__single">
+                    <div class="cards__item">
+                        <div class="">
+                            <img src="/src/assets/photo_tovara.jpg" alt="T-shirt">
+                            <span class="cards__label">New</span>
+                        </div>
+                        <div class="cards__info">
+                            <h3 class="cards__count">220 баллов</h3>
+                            <h4 class="cards__title">Футболка "Эволюционируй или сдохни</h4>
+                            <p class="cards__size">Размеры S/M/L</p>
+                            <button type="button" class="cards__btn">Заказать</button>
                         </div>
                     </div>
-                    <div class="item_single_card">
-                        <div class="item_single_card_content">
-                            <div class="single_card_image">
-                                <img src="/src/assets/photo_tovara.jpg" alt="T-shirt">
-                                <span class="item_label">New</span>
-                            </div>
-                            <div class="item_info">
-                                <h3 class="item_count">220 баллов</h3>
-                                <h4 class="item_title">Футболка "Эволюционируй или сдохни</h4>
-                                <p class="item_size">Размеры S/M/L</p>
-                                <button type="button" class="item_btn">Заказать</button>
-                            </div>
+                </div><div class="cards__single">
+                    <div class="cards__item">
+                        <div class="">
+                            <img src="/src/assets/photo_tovara.jpg" alt="T-shirt">
+                            <span class="cards__label">New</span>
                         </div>
-                    </div>
-                    <div class="item_single_card">
-                        <div class="item_single_card_content">
-                            <div class="single_card_image">
-                                <img src="/src/assets/photo_tovara.jpg" alt="T-shirt">
-                                <span class="item_label">New</span>
-                            </div>
-                            <div class="item_info">
-                                <h3 class="item_count">220 баллов</h3>
-                                <h4 class="item_title">Футболка "Эволюционируй или сдохни</h4>
-                                <p class="item_size">Размеры S/M/L</p>
-                                <button type="button" class="item_btn">Заказать</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item_single_card">
-                        <div class="item_single_card_content">
-                            <div class="single_card_image">
-                                <img src="/src/assets/photo_tovara.jpg" alt="T-shirt">
-                                <span class="item_label">New</span>
-                            </div>
-                            <div class="item_info">
-                                <h3 class="item_count">220 баллов</h3>
-                                <h4 class="item_title">Футболка "Эволюционируй или сдохни</h4>
-                                <p class="item_size">Размеры S/M/L</p>
-                                <button type="button" class="item_btn">Заказать</button>
-                            </div>
+                        <div class="cards__info">
+                            <h3 class="cards__count">220 баллов</h3>
+                            <h4 class="cards__title">Футболка "Эволюционируй или сдохни</h4>
+                            <p class="cards__size">Размеры S/M/L</p>
+                            <button type="button" class="cards__btn">Заказать</button>
                         </div>
                     </div>
                 </div>
+                <div class="cards__single">
+                    <div class="cards__item">
+                        <div class="">
+                            <img src="/src/assets/photo_tovara.jpg" alt="T-shirt">
+                            <span class="cards__label">New</span>
+                        </div>
+                        <div class="cards__info">
+                            <h3 class="cards__count">220 баллов</h3>
+                            <h4 class="cards__title">Футболка "Эволюционируй или сдохни</h4>
+                            <p class="cards__size">Размеры S/M/L</p>
+                            <button type="button" class="cards__btn">Заказать</button>
+                        </div>
+                    </div>
+                </div>
+                </div>
             </div>
         </div>
-        <div class="footer_wrapper">
-            <div>
-                <p class="kolesa_text">© Kolesa Group</p>
+        <div class="footer">
+            <div class="footer__content">
+                <p class="footer__kolesa_text">© Kolesa Group</p>
                 <div>
                     <a href="/">
                         <img src="/src/assets/icons/instagram.svg" alt="instagram">
@@ -189,18 +173,21 @@
                     </a>
                 </div>
             </div>
-            <div class="support_info">
-                <div class="support_text">
+            <div class="footer__info">
+                <div class="footer__text">
                     <p>Есть идеи что улучшить?</p>
                     <p>Не знаешь, с кем решить проблему?</p>
                 </div>
                 <div>
-                    <button class="send_info">Написать</button>
+                    <button class="footer__info_btn">Написать</button>
                 </div>
             </div>
         </div>
-    </div>
+        </div>
+
+
 </body>
 
+<script type="module" src="/src/css/style.scss"></script>
 
 </html>
