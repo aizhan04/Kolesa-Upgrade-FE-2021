@@ -1,0 +1,31 @@
+.sidebar_wrapper {
+    list-style: none;
+    padding-bottom: 26px;
+
+    &__paragraph {
+        font-size: 16px;
+        line-height: 24px;
+        color: $dark;
+        text-decoration: none;
+
+        &:hover {
+            color: $blue;
+        }
+
+        &:active {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            color: #1c1819;
+            text-decoration: none;
+        }
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    li {
+        padding-bottom: 26px;
+    }
+}
