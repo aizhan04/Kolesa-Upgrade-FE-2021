@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import 'vars.scss';
+@import 'header.scss';
+@import 'footer.scss';
+@import 'content.scss';
+@import 'sidebar.scss';
+@import 'card.scss';
+@import 'modal.scss';
+
+#app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 60px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open-Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.section_content_wrapper {
+    width: 100%;
+    max-width: 1440px;
+    display: grid;
+    grid-template-columns: 281px auto;
+    padding: 0 90px 192px 32px;
+}
